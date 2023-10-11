@@ -114,7 +114,13 @@ public class Program
     public static void GenerateRandomNumber()
     {
         Random number = new();
-        Console.WriteLine("The random number is: " + number.Next());
+        Console.WriteLine("Generating Random numbers....");
+        for (int i = 1; i < 11; i++)
+        {
+            Console.WriteLine($"The random number({i}) " + number.Next(1000, 2000));
+        }
+
+
     }
 
     public static void SumMethod()
