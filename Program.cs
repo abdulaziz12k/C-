@@ -113,11 +113,16 @@ public class Program
 
     public static void GenerateRandomNumber()
     {
+        int firstValue = 500;
+        int secondValue = 600;
+        int largerValue = Math.Max(firstValue, secondValue);
+
+        Console.WriteLine($"The larger between {firstValue} and {secondValue} is: {largerValue}");
         Random number = new();
         Console.WriteLine("Generating Random numbers....");
         for (int i = 1; i < 11; i++)
         {
-            Console.WriteLine($"Generating Random numbers....\nThe random number({i}) " + number.Next(1000, 2000));
+            Console.WriteLine($"The random number({i}) " + number.Next(1000, 2000));
         }
 
 
