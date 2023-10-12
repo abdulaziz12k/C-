@@ -20,7 +20,6 @@ public class Program
         SumMethod();
 
     }
-
     public static void IncrementDecrement()
     {
         int value = 10;
@@ -34,7 +33,6 @@ public class Program
         value--;
         Console.WriteLine("Third decrement: " + value);
     }
-
     public static void CalculateGrades()
     {
         // initialize variables - graded assignments
@@ -72,7 +70,6 @@ public class Program
         Console.WriteLine("Zahirah\t\t" + CalculateAverage(zahirah));
         Console.WriteLine("Jeong\t\t" + CalculateAverage(jeong));
     }
-
     public static void CalculateGPA()
     {
         //-------------- CALCULATE THE GPA OF A STUDENT -------------------------//
@@ -110,24 +107,30 @@ public class Program
                 + $"Final GPA: \t\t{gpa.ToString("F2")}"
         );
     }
-
     public static void GenerateRandomNumber()
+    {
+        Random number = new();
+        Console.WriteLine("Generating Random numbers....");
+        for (int i = 1; i < 11; i++)
+        {
+            Console.WriteLine($"The random number({i}) " + number.Next(1000, 2000));
+            if (number.Next() < 1)
+            {
+                Console.WriteLine("Win !");
+
+            }
+            else
+                Console.WriteLine("Lost !");
+        }
+    }
+    public static void CompareLargerNumber()
     {
         int firstValue = 500;
         int secondValue = 600;
         int largerValue = Math.Max(firstValue, secondValue);
 
         Console.WriteLine($"The larger between {firstValue} and {secondValue} is: {largerValue}");
-        Random number = new();
-        Console.WriteLine("Generating Random numbers....");
-        for (int i = 1; i < 11; i++)
-        {
-            Console.WriteLine($"The random number({i}) " + number.Next(1000, 2000));
-        }
-
-
     }
-
     public static void SumMethod()
     {
         int A = 5;
