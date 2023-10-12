@@ -113,14 +113,15 @@ public class Program
         Console.WriteLine("Generating Random numbers....");
         for (int i = 1; i < 11; i++)
         {
-            Console.WriteLine($"The random number({i}) " + number.Next(1000, 2000));
-            if (number.Next() < 1)
+            int randomNumber = number.Next(1000, 2000);
+            Console.WriteLine($"The random number({i})\t " + randomNumber);
+            if (randomNumber < 1200 && randomNumber.ToString().Contains("1"))
             {
                 Console.WriteLine("Win !");
 
             }
             else
-                Console.WriteLine("Lost !");
+                Console.WriteLine("Lose !");
         }
     }
     public static void CompareLargerNumber()
