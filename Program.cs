@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Globalization;
 
 public class Program
 {
     public static void Main(string[] args)
     {
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
         Random dice = new Random();
         int roll1 = dice.Next();
         int roll2 = dice.Next(101);
@@ -18,8 +20,10 @@ public class Program
         CalculateGPA();
         GenerateRandomNumber();
         SumMethod();
-
+        ShowTime();
+        Console.ReadLine();
     }
+
     public static void IncrementDecrement()
     {
         int value = 10;
@@ -33,6 +37,7 @@ public class Program
         value--;
         Console.WriteLine("Third decrement: " + value);
     }
+
     public static void CalculateGrades()
     {
         // initialize variables - graded assignments
@@ -70,6 +75,7 @@ public class Program
         Console.WriteLine("Zahirah\t\t" + CalculateAverage(zahirah));
         Console.WriteLine("Jeong\t\t" + CalculateAverage(jeong));
     }
+
     public static void CalculateGPA()
     {
         //-------------- CALCULATE THE GPA OF A STUDENT -------------------------//
@@ -86,7 +92,8 @@ public class Program
         int course5Credit = 3;
         int gradeA = 4;
         int gradeB = 3;
-        double totalHours = course1Credit + course2Credit + course3Credit + course4Credit + course5Credit;
+        double totalHours =
+            course1Credit + course2Credit + course3Credit + course4Credit + course5Credit;
         double calc1 = (course1Credit) * (gradeA);
         double calc2 = (course2Credit) * (gradeB);
         double calc3 = (course3Credit) * (gradeB);
@@ -107,6 +114,7 @@ public class Program
                 + $"Final GPA: \t\t{gpa.ToString("F2")}"
         );
     }
+
     public static void GenerateRandomNumber()
     {
         Random number = new();
@@ -118,12 +126,12 @@ public class Program
             if (randomNumber < 1200 && randomNumber.ToString().Contains("1"))
             {
                 Console.WriteLine("Win !");
-
             }
             else
                 Console.WriteLine("Lose !");
         }
     }
+
     public static void CompareLargerNumber()
     {
         int firstValue = 500;
@@ -132,11 +140,23 @@ public class Program
 
         Console.WriteLine($"The larger between {firstValue} and {secondValue} is: {largerValue}");
     }
+
     public static void SumMethod()
     {
         int A = 5;
         int B = 40;
         int sum = A + B;
         Console.WriteLine("The sum of numbers is: " + sum);
+    }
+
+    public static void ShowTime()
+    {
+        DateTime date = DateTime.Now;
+        CultureInfo arabic = new CultureInfo("ar-SA");
+        arabic.DateTimeFormat.Calendar = new HijriCalendar();
+
+        Console.WriteLine(
+            $"Universal format: {date.ToString("U", CultureInfo.InvariantCulture)}\nHijri format: {date.ToString(arabic)}"
+        );
     }
 }
