@@ -6,7 +6,7 @@ public class Program
     public static void Main(string[] args)
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
-        Random dice = new Random();
+        Random dice = new();
         int roll1 = dice.Next();
         int roll2 = dice.Next(101);
         int roll3 = dice.Next(50, 101);
