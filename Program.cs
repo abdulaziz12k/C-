@@ -152,7 +152,7 @@ public class Program
     public static void ShowTime()
     {
         DateTime date = DateTime.Now;
-        CultureInfo arabic = new CultureInfo("ar-SA");
+        CultureInfo arabic = new("ar-SA");
         arabic.DateTimeFormat.Calendar = new HijriCalendar();
 
         Console.WriteLine(
