@@ -14,10 +14,8 @@ public class Program
             Console.WriteLine(i);
 
         }
-        for (int i = 0; i < aziz2.Length; i++)
-        {
-            Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz");
-        }
+        Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz,\n the array has {aziz2.Length} indexes");
+
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Random dice = new();
         int roll1 = dice.Next();
