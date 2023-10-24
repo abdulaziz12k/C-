@@ -5,6 +5,19 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        // Two types of arrays 
+        // "foreach" when the index is no concern
+        decimal[] aziz = { 1, 2, 3, 4, 5 };
+        String[] aziz2 = { "hi", "there" };
+        foreach (decimal i in aziz)
+        {
+            Console.WriteLine(i);
+
+        }
+        for (int i = 0; i < aziz2.Length; i++)
+        {
+            Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz");
+        }
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Random dice = new();
         int roll1 = dice.Next();
