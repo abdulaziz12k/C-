@@ -8,13 +8,23 @@ public class Program
         // Two types of arrays 
         // "foreach" when the index is no concern
         decimal[] aziz = { 1, 2, 3, 4, 5 };
-        String[] aziz2 = { "hi", "there" };
+        string[] aziz2 = { "hi", "there" };
         foreach (decimal i in aziz)
         {
             Console.WriteLine(i);
 
         }
-        Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz,\n the array has {aziz2.Length} indexes");
+        Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz,\nthe array has {aziz2.Length} indexes");
+
+        int a = 10;
+        int b = 20;
+        string result = (a > b) ? "it is bigger" : "it is not bigger";
+        Console.WriteLine(result);
+        int x = 10;
+        int y = 20;
+        bool result2 = x > y;
+        Console.WriteLine(result2);
+
 
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Random dice = new();
