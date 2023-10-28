@@ -8,18 +8,29 @@ public class Program
         // Two types of arrays 
         // "foreach" when the index is no concern
         decimal[] aziz = { 1, 2, 3, 4, 5 };
-        string[] aziz2 = { "hi", "there" };
+        string[] aziz2 = { "hi", "there", "friend" };
         foreach (decimal i in aziz)
         {
             Console.WriteLine(i);
-
         }
-        Console.WriteLine($"{aziz2[0]} {aziz2[1]} Aziz,\nthe array has {aziz2.Length} indexes");
 
+        Console.Write("Reversed: ");
+        for (int i = aziz2.Length - 1; i >= 0; i--)
+        {
+            Console.Write(aziz2[i] + " ");
+        }
+
+        Console.Write("\nOriginal: ");
+        for (int i = 0; i < aziz2.Length; i++)
+        {
+            Console.Write(aziz2[i] + " ");
+        }
+
+        Console.WriteLine($"\nThe array has {aziz2.Length} indexes");
         int a = 10;
         int b = 20;
         string result = (a > b) ? "it is bigger" : "it is not bigger";
-        Console.WriteLine(result);
+        Console.WriteLine("\n" + result);
         int x = 10;
         int y = 20;
         bool result2 = x > y;
