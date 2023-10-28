@@ -5,7 +5,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Two types of arrays 
         // "foreach" when the index is no concern
         decimal[] aziz = { 1, 2, 3, 4, 5 };
         string[] aziz2 = { "hi", "there", "friend" };
@@ -25,8 +24,19 @@ public class Program
         {
             Console.Write(aziz2[i] + " ");
         }
-
         Console.WriteLine($"\nThe array has {aziz2.Length} indexes");
+
+        // Even And Odd NUMBERS
+        for (int i = 0; i <= 50; i++)
+        {
+            if (i % 2 == 0)
+                Console.WriteLine($"{i}is even");
+            else
+                Console.WriteLine($"{i} is odd");
+        }
+
+
+
         int a = 10;
         int b = 20;
         string result = (a > b) ? "it is bigger" : "it is not bigger";
