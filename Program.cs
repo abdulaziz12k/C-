@@ -115,11 +115,11 @@ public class Program
         int gradeB = 3;
         double totalHours =
             course1Credit + course2Credit + course3Credit + course4Credit + course5Credit;
-        double calc1 = (course1Credit) * (gradeA);
-        double calc2 = (course2Credit) * (gradeB);
-        double calc3 = (course3Credit) * (gradeB);
-        double calc4 = (course4Credit) * (gradeB);
-        double calc5 = (course5Credit) * (gradeA);
+        double calc1 = course1Credit * gradeA;
+        double calc2 = course2Credit * gradeB;
+        double calc3 = course3Credit * gradeB;
+        double calc4 = course4Credit * gradeB;
+        double calc5 = course5Credit * gradeA;
 
         double calcsum = calc1 + calc2 + calc3 + calc4 + calc5;
         double gpa = calcsum / totalHours;
