@@ -30,7 +30,7 @@ public class Program
         for (int i = 0; i <= 50; i++)
         {
             if (i % 2 == 0)
-                Console.WriteLine($"{i}is even");
+                Console.WriteLine($"{i} is even");
             else
                 Console.WriteLine($"{i} is odd");
         }
