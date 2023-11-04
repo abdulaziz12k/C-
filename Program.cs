@@ -52,7 +52,7 @@ public class Program
         string[] aziz2 = { "hi", "there", "friend" };
 
         Array.Reverse(aziz);
-        Console.Write("Reversed:\n");
+        Console.Write("Sorting...\nReversed:\n");
         foreach (decimal i in aziz)
         {
             Console.Write($"{i},");
