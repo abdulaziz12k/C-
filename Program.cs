@@ -13,9 +13,6 @@ public class Program
             else
                 Console.WriteLine($"{i} is odd");
         }
-
-
-
         int a = 10;
         int b = 20;
         string result = (a > b) ? "it is bigger" : "it is not bigger";
@@ -170,7 +167,7 @@ public class Program
     {
         Random number = new();
         Console.WriteLine("Generating Random numbers....");
-        for (int i = 1; i < 11; i++)
+        for (int i = 1; i < 6; i++)
         {
             int randomNumber = number.Next(1000, 2000);
             Console.WriteLine($"The random number({i})\t " + randomNumber);
