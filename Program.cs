@@ -5,29 +5,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // "foreach" when the index is no concern
-        decimal[] aziz = { 1, 2, 3, 4, 5 };
-        string[] aziz2 = { "hi", "there", "friend" };
-        foreach (decimal i in aziz)
-        {
-            Console.WriteLine(i);
-        }
-
-        Console.Write("Reversed: ");
-        for (int i = aziz2.Length - 1; i >= 0; i--)
-        {
-            Console.Write(aziz2[i] + " ");
-        }
-
-        Console.Write("\nOriginal: ");
-        for (int i = 0; i < aziz2.Length; i++)
-        {
-            Console.Write(aziz2[i] + " ");
-        }
-        Console.WriteLine($"\nThe array has {aziz2.Length} indexes");
-
         // Even And Odd NUMBERS
-        for (int i = 0; i <= 50; i++)
+        for (int i = 0; i <= 10; i++)
         {
             if (i % 2 == 0)
                 Console.WriteLine($"{i} is even");
@@ -63,9 +42,39 @@ public class Program
         GenerateRandomNumber();
         SumMethod();
         ShowTime();
+        Sortarrays();
         Console.ReadLine();
     }
+    public static void Sortarrays()
+    {
+        // "foreach" when the index is no concern
+        decimal[] aziz = { 1, 2, 3, 4, 5, 6 };
+        string[] aziz2 = { "hi", "there", "friend" };
 
+        Array.Reverse(aziz);
+        Console.Write("Reversed:\n");
+        foreach (decimal i in aziz)
+        {
+            Console.Write($"{i},");
+        }
+        Array.Sort(aziz);
+        Console.Write("\nAscended:\n");
+        foreach (decimal i in aziz)
+        {
+            Console.Write($"{i},");
+        }
+        for (int i = aziz2.Length - 1; i >= 0; i--)
+        {
+            Console.Write(aziz2[i] + " ");
+        }
+
+        Console.Write("\nOriginal: ");
+        for (int i = 0; i < aziz2.Length; i++)
+        {
+            Console.Write(aziz2[i] + " ");
+        }
+        Console.WriteLine($"\nThe array has {aziz2.Length} indexes");
+    }
     public static void IncrementDecrement()
     {
         int value = 10;
