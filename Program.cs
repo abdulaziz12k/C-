@@ -12,6 +12,20 @@ public class Program
             else
                 Console.WriteLine($"{i} is odd");
         }
+
+
+        IncrementDecrement();
+        CalculateGrades();
+        CalculateGPA();
+        GenerateRandomNumber();
+        SumMethod();
+        DisplayDate();
+        Sortarrays();
+        RollDice();
+        Console.ReadLine();
+    }
+    public static void RollDice()
+    {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Random dice = new();
         int roll1 = dice.Next();
@@ -21,15 +35,6 @@ public class Program
         Console.WriteLine($"First roll: {roll1}");
         Console.WriteLine($"Second roll: {roll2}");
         Console.WriteLine($"Third roll: {roll3}");
-
-        IncrementDecrement();
-        CalculateGrades();
-        CalculateGPA();
-        GenerateRandomNumber();
-        SumMethod();
-        ShowTime();
-        Sortarrays();
-        Console.ReadLine();
     }
     public static void Sortarrays()
     {
@@ -186,7 +191,7 @@ public class Program
         Console.WriteLine("The sum of numbers is: " + sum);
     }
 
-    public static void ShowTime()
+    public static void DisplayDate()
     {
         DateTime date = DateTime.Now;
         CultureInfo arabic = new("ar-SA");
