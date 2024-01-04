@@ -8,7 +8,7 @@ public class Program
         for (var i = 0; i <= 10; i++)
         {
             if (i % 2 == 0)
-                Console.WriteLine($"the following number is even: {i}");
+                Console.WriteLine($"{i} is even");
             else
                 Console.WriteLine($"{i} is odd");
         }
