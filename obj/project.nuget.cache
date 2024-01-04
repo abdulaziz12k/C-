@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "LxTfs++HRKHPH53PdDv4ZSvQc9St4zNuEvPHSUu59oEWvgFFFzaDM0ajs0zblohGs/ut4w0nqQIXp2+dl+yA8A==",
+  "dgSpecHash": "ZeNF/64Xh7RHTpe8s64sgbcb0DyvxmhU0Gi5TSy3RbGDd0NRzSL2b/kXfoDryhCqThz5PwXBZqsXqSYbojr0bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\azooz\\Desktop\\C#\\C#.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\C#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahega\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\ahega\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\ahega\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\ahega\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
   "logs": []
 }

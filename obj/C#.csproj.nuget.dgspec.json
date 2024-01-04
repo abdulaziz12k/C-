@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\azooz\\Desktop\\C#\\C#.csproj": {}
+    "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\C#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\azooz\\Desktop\\C#\\C#.csproj": {
+    "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\azooz\\Desktop\\C#\\C#.csproj",
+        "projectUniqueName": "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\C#.csproj",
         "projectName": "C#",
-        "projectPath": "C:\\Users\\azooz\\Desktop\\C#\\C#.csproj",
-        "packagesPath": "C:\\Users\\azooz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\azooz\\Desktop\\C#\\obj\\",
+        "projectPath": "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\C#.csproj",
+        "packagesPath": "C:\\Users\\ahega\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahega\\Desktop\\github_repo\\C-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\azooz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ahega\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,12 +48,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
