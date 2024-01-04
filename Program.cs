@@ -5,10 +5,10 @@ public class Program
     public static void Main(string[] args)
     {
         // Even And Odd NUMBERS
-        for (int i = 0; i <= 10; i++)
+        for (var i = 0; i <= 10; i++)
         {
             if (i % 2 == 0)
-                Console.WriteLine($"{i} is even");
+                Console.WriteLine($"the following number is even: {i}");
             else
                 Console.WriteLine($"{i} is odd");
         }
