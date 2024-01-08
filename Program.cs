@@ -4,25 +4,25 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Even And Odd NUMBERS
-        for (var i = 0; i <= 10; i++)
+        // IncrementDecrement();
+        // CalculateGrades();
+        // CalculateGPA();
+        // GenerateRandomNumber();
+        // SumMethod();
+        DisplayDate();
+        Sortarrays();
+        // RollDice();
+        // EvenOdd();
+        Console.ReadLine();
+    }
+    public static void EvenOdd(){
+                for (var i = 0; i <= 10; i++)
         {
             if (i % 2 == 0)
                 Console.WriteLine($"{i} is even");
             else
                 Console.WriteLine($"{i} is odd");
         }
-
-
-        IncrementDecrement();
-        CalculateGrades();
-        CalculateGPA();
-        GenerateRandomNumber();
-        SumMethod();
-        DisplayDate();
-        Sortarrays();
-        RollDice();
-        Console.ReadLine();
     }
     public static void RollDice()
     {
@@ -39,32 +39,27 @@ public class Program
     public static void Sortarrays()
     {
         // "foreach" when the index is no concern
-        decimal[] aziz = { 1, 2, 3, 4, 5, 6 };
-        string[] aziz2 = { "hi", "there", "friend" };
+        decimal[] aziz = { 1, 3, 6, 4, 5, 2 };
 
         Array.Reverse(aziz);
-        Console.Write("Sorting...\nReversed:\n");
+        Console.Write("Working...\nReversed:\n");
         foreach (decimal i in aziz)
         {
             Console.Write($"{i},");
         }
-        Array.Sort(aziz2);
-        Console.Write("\nAscended:\n");
+        Array.Sort(aziz);
+        Console.Write("\nSorted:\n");
         foreach (decimal i in aziz)
         {
             Console.Write($"{i},");
-        }
-        for (int i = aziz2.Length - 1; i >= 0; i--)
-        {
-            Console.Write(aziz2[i] + " ");
         }
 
         Console.Write("\nOriginal: ");
-        for (int i = 0; i < aziz2.Length; i++)
+        for (int i = 0; i < aziz.Length; i++)
         {
-            Console.Write(aziz2[i] + " ");
+            Console.Write(aziz[i] + " ");
         }
-        Console.WriteLine($"\nThe array has {aziz2.Length} indexes");
+        Console.WriteLine($"\nThe array has {aziz.Length} indexes");
     }
     public static void IncrementDecrement()
     {
