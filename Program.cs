@@ -48,7 +48,7 @@ public class Program
         {
             Console.Write($"{i},");
         }
-        Array.Sort(aziz);
+        Array.Sort(aziz2);
         Console.Write("\nAscended:\n");
         foreach (decimal i in aziz)
         {
