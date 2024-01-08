@@ -70,13 +70,13 @@ public class Program
     {
         int value = 10;
 
-        value = value++;
+        value++;
         Console.WriteLine("First increment: " + value);
 
         value++;
         Console.WriteLine("Second increment: " + value);
 
-        value--;
+        value-=5;
         Console.WriteLine("Third decrement: " + value);
     }
 
