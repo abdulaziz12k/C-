@@ -173,7 +173,6 @@ public class Program
                 Console.WriteLine("Lose !");
         }
     }
-
     public static void CompareLargerNumber()
     {
         int firstValue = 500;
