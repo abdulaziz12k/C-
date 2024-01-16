@@ -8,7 +8,7 @@ public class Program
         // CalculateGrades();
         // CalculateGPA();
         // GenerateRandomNumber();
-        // SumMethod();
+        SumMethod();
         DisplayDate();
         Sortarrays();
         // RollDice();
@@ -182,7 +182,7 @@ public class Program
         int A = 5;
         int B = 40;
         int sum = A + B;
-        Console.WriteLine("The sum of numbers is: " + sum);
+        Console.WriteLine($"the sum of {A} + {B} = {sum}");
     }
 
     public static void DisplayDate()
