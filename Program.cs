@@ -50,6 +50,9 @@ public class Program
         {
             Console.Write($"{i},");
         }
+        Array.Resize(ref aziz, 7);
+        aziz[6] = 55;
+        aziz[7] = 66;
         Array.Sort(aziz);
         Console.Write("\nSorted:\n");
         foreach (decimal i in aziz)
