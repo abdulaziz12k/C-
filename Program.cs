@@ -24,6 +24,7 @@ public class Program
             else
                 Console.WriteLine($"{i} is odd");
         }
+        Console.WriteLine("");
     }
     public static void RollDice()
     {
@@ -36,6 +37,7 @@ public class Program
         Console.WriteLine($"First roll: {roll1}");
         Console.WriteLine($"Second roll: {roll2}");
         Console.WriteLine($"Third roll: {roll3}");
+        Console.WriteLine("");
     }
     public static void Sortarrays()
     {
@@ -79,6 +81,7 @@ public class Program
         }
 
         Console.WriteLine($"\nThe array has {aziz.Length} indexes");
+        Console.WriteLine("");
 
     }
     public static void IncrementDecrement()
@@ -93,6 +96,7 @@ public class Program
 
         value -= 5;
         Console.WriteLine("Third decrement: " + value);
+        Console.WriteLine("");
     }
 
     public static void CalculateGrades()
@@ -131,6 +135,7 @@ public class Program
         Console.WriteLine("Nicolas\t\t" + CalculateAverage(nicolas));
         Console.WriteLine("Zahirah\t\t" + CalculateAverage(zahirah));
         Console.WriteLine("Jeong\t\t" + CalculateAverage(jeong));
+        Console.WriteLine("");
     }
 
     public static void CalculateGPA()
@@ -170,6 +175,7 @@ public class Program
                 + $"{course5Name}\t\t{gradeA}\t\t{course5Credit}\n"
                 + $"Final GPA: \t\t{gpa.ToString("F2")}"
         );
+        Console.WriteLine("");
     }
 
     public static void GenerateRandomNumber()
@@ -187,6 +193,7 @@ public class Program
             else
                 Console.WriteLine("Lose !");
         }
+        Console.WriteLine("");
     }
     public static void CompareLargerNumber()
     {
@@ -195,6 +202,7 @@ public class Program
         int largerValue = Math.Max(firstValue, secondValue);
 
         Console.WriteLine($"The larger between {firstValue} and {secondValue} is: {largerValue}");
+        Console.WriteLine("");
     }
 
     public static void SumMethod()
@@ -203,10 +211,12 @@ public class Program
         int B = 40;
         int sum = A + B;
         Console.WriteLine($"the sum of {A} + {B} = {sum}");
+        Console.WriteLine("");
     }
 
     public static void DisplayDate()
     {
+        Console.WriteLine("");
         DateTime date = DateTime.Now;
         CultureInfo arabic = new("ar-SA");
         arabic.DateTimeFormat.Calendar = new HijriCalendar();
@@ -214,5 +224,7 @@ public class Program
         Console.WriteLine(
             $"Universal format: {date.ToString("U", CultureInfo.InvariantCulture)}\nHijri format: {date.ToString(arabic)}"
         );
+        Console.WriteLine("");
     }
+
 }
