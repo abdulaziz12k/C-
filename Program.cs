@@ -42,40 +42,52 @@ public class Program
         // "foreach" when the index is no concern
         decimal[] aziz = { 1, 3, 6, 4, 5, 2 };
 
-        // Array.Reverse(aziz);
-        // Console.Write("Working...\nReversed:\n");
-        // foreach (decimal i in aziz)
-        // {
-        //     Console.Write($"{i},");
-        // }
-        // Array.Sort(aziz);
-        // Console.Write("\nSorted:\n");
-        // foreach (decimal i in aziz)
-        // {
-        //     Console.Write($"{i},");
-        // }
+        Array.Reverse(aziz);
+        Console.Write("Working...\nReversed:\n");
+        foreach (decimal i in aziz)
+        {
+            Console.Write($"{i},");
+        }
+        Array.Sort(aziz);
+        Console.Write("\nSorted:\n");
+        foreach (decimal i in aziz)
+        {
+            Console.Write($"{i},");
+        }
 
-        // Console.Write("\nOriginal: ");
-        // for (int i = 0; i < aziz.Length; i++)
-        // {
-        //     Console.Write(aziz[i] + " ");
-        // }
-        Array.Clear(aziz, 0, 1);
+        Console.Write("\nOriginal: ");
         for (int i = 0; i < aziz.Length; i++)
         {
-            Console.WriteLine($"{aziz[i]}");
+            Console.Write(aziz[i] + " ");
+        }
+        Array.Clear(aziz, 0, 4);
+        for (int i = 0; i < aziz.Length; i++)
+        {
+            if (aziz[i] == 0)
+            { Console.WriteLine($"Clearing indexe...{i}"); }
 
         }
-        // Console.WriteLine($"\nThe array has {aziz.Length} indexes");
-        // string[] pallets = { "B14", "A11", "B12", "A13" };
-        // Console.WriteLine("");
+        Console.WriteLine("Array after clearing");
+        foreach (decimal i in aziz)
+        {
+            if (i != 0)
+            {
 
-        // Array.Clear(pallets, 0, 2);
-        // Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
-        // foreach (var pallet in pallets)
-        // {
-        //     Console.WriteLine($"-- {pallet}");
-        // }
+                Console.WriteLine($"{i}");
+            }
+
+        }
+
+        Console.WriteLine($"\nThe array has {aziz.Length} indexes");
+        string[] pallets = { "B14", "A11", "B12", "A13" };
+        Console.WriteLine("");
+
+        Array.Clear(pallets, 0, 2);
+        Console.WriteLine($"Clearing 2 ... count: {pallets.Length}");
+        foreach (var pallet in pallets)
+        {
+            Console.WriteLine($"-- {pallet}");
+        }
 
     }
     public static void IncrementDecrement()
