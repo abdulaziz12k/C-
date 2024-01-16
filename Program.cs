@@ -60,7 +60,7 @@ public class Program
         // {
         //     Console.Write(aziz[i] + " ");
         // }
-        Array.Clear(aziz, 0, 5);
+        Array.Clear(aziz, 0, 1);
         for (int i = 0; i < aziz.Length; i++)
         {
             Console.WriteLine($"{aziz[i]}");
