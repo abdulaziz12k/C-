@@ -15,8 +15,9 @@ public class Program
         // EvenOdd();
         Console.ReadLine();
     }
-    public static void EvenOdd(){
-                for (var i = 0; i <= 10; i++)
+    public static void EvenOdd()
+    {
+        for (var i = 0; i <= 10; i++)
         {
             if (i % 2 == 0)
                 Console.WriteLine($"{i} is even");
@@ -71,7 +72,7 @@ public class Program
         value++;
         Console.WriteLine("Second increment: " + value);
 
-        value-=5;
+        value -= 5;
         Console.WriteLine("Third decrement: " + value);
     }
 
