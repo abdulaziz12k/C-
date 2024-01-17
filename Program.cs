@@ -50,7 +50,7 @@ public class Program
         {
             Console.Write($"{i},");
         }
-        Array.Resize(ref aziz, 7);
+        Array.Resize(ref aziz, 8);
         aziz[6] = 55;
         aziz[7] = 66;
         Array.Sort(aziz);
