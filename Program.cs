@@ -4,16 +4,16 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // IncrementDecrement();
-        // CalculateGrades();
-        // CalculateGPA();
-        // GenerateRandomNumber();
-        // SumMethod();
-        // DisplayDate();
-        // Sortarrays();
+        IncrementDecrement();
+        CalculateGrades();
+        CalculateGPA();
+        GenerateRandomNumber();
+        SumMethod();
+        DisplayDate();
+        Sortarrays();
         Joinarrays();
-        // RollDice();
-        // EvenOdd();
+        RollDice();
+        EvenOdd();
         Console.ReadLine();
     }
     public static void EvenOdd()
