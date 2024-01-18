@@ -42,10 +42,10 @@ public class Program
     }
     public static void Joinarrays()
     {
-        string exarray = "the name is aziz";
+        string exarray = "thenameisaziz";
         char[] tochararray = exarray.ToCharArray();
         string result = string.Join(",", tochararray);
-        Console.WriteLine($"the edit array into char value is as follows\n{result}");
+        Console.WriteLine($"the edited array into char value is as follows\n{result}");
         Console.WriteLine("");
     }
     public static void Sortarrays()
