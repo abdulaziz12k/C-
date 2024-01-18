@@ -4,15 +4,16 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        IncrementDecrement();
-        CalculateGrades();
-        CalculateGPA();
-        GenerateRandomNumber();
-        SumMethod();
-        DisplayDate();
-        Sortarrays();
-        RollDice();
-        EvenOdd();
+        // IncrementDecrement();
+        // CalculateGrades();
+        // CalculateGPA();
+        // GenerateRandomNumber();
+        // SumMethod();
+        // DisplayDate();
+        // Sortarrays();
+        Joinarrays();
+        // RollDice();
+        // EvenOdd();
         Console.ReadLine();
     }
     public static void EvenOdd()
@@ -37,6 +38,14 @@ public class Program
         Console.WriteLine($"First roll: {roll1}");
         Console.WriteLine($"Second roll: {roll2}");
         Console.WriteLine($"Third roll: {roll3}");
+        Console.WriteLine("");
+    }
+    public static void Joinarrays()
+    {
+        string exarray = "the name is aziz";
+        char[] tochararray = exarray.ToCharArray();
+        string result = string.Join(",", tochararray);
+        Console.WriteLine($"the edit array into char value is as follows\n{result}");
         Console.WriteLine("");
     }
     public static void Sortarrays()
