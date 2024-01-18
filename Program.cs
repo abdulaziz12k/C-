@@ -27,6 +27,7 @@ public class Program
         }
         Console.WriteLine("");
     }
+    //---------------------ROLLING DICES-------------------//
     public static void RollDice()
     {
         Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -40,6 +41,7 @@ public class Program
         Console.WriteLine($"Third roll: {roll3}");
         Console.WriteLine("");
     }
+    //---------------------JOIN ARRAYS-------------------//
     public static void Joinarrays()
     {
         string exarray = "thenameisaziz";
@@ -48,6 +50,7 @@ public class Program
         Console.WriteLine($"the edited array into char value is as follows\n{result}");
         Console.WriteLine("");
     }
+    //---------------------ARRAY METHODS-------------------//
     public static void Sortarrays()
     {
         // "foreach" when the index is no concern
