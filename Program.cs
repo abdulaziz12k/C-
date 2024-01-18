@@ -44,11 +44,17 @@ public class Program
     //---------------------JOIN ARRAYS-------------------//
     public static void Joinarrays()
     {
-        string value = "thenameisaziz";
+        string value = "Won";
         char[] tochararray = value.ToCharArray();
         Array.Reverse(tochararray);
         string result = string.Join(",", tochararray);
         Console.WriteLine($"the edited array into char value is as follows\n{result}");
+
+        string[] index = result.Split(',');
+        foreach (string i in index)
+        {
+            Console.WriteLine(i);
+        }
         Console.WriteLine("");
     }
     //---------------------ARRAY METHODS-------------------//
