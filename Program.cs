@@ -44,8 +44,9 @@ public class Program
     //---------------------JOIN ARRAYS-------------------//
     public static void Joinarrays()
     {
-        string exarray = "thenameisaziz";
-        char[] tochararray = exarray.ToCharArray();
+        string value = "thenameisaziz";
+        char[] tochararray = value.ToCharArray();
+        Array.Reverse(tochararray);
         string result = string.Join(",", tochararray);
         Console.WriteLine($"the edited array into char value is as follows\n{result}");
         Console.WriteLine("");
