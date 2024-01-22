@@ -47,6 +47,7 @@ public class Program
         string value = "Won";
         char[] tochararray = value.ToCharArray();
         Array.Reverse(tochararray);
+        //constructs strings from the elements of the array//
         string result = string.Join(",", tochararray);
         Console.WriteLine($"the edited array into char value is as follows\n{result}");
 
