@@ -4,17 +4,17 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        IncrementDecrement();
-        CalculateGrades();
-        CalculateGPA();
-        GenerateRandomNumber();
-        SumMethod();
-        DisplayDate();
-        Sortarrays();
+        // IncrementDecrement();
+        // CalculateGrades();
+        // CalculateGPA();
+        // GenerateRandomNumber();
+        // SumMethod();
+        // DisplayDate();
+        // Sortarrays();
         Joinarrays();
-        RollDice();
-        EvenOdd();
-        Console.ReadLine();
+        // RollDice();
+        // EvenOdd();
+        // Console.ReadLine();
     }
     public static void EvenOdd()
     {
@@ -44,19 +44,30 @@ public class Program
     //---------------------JOIN ARRAYS-------------------//
     public static void Joinarrays()
     {
-        string value = "Won";
-        char[] tochararray = value.ToCharArray();
-        Array.Reverse(tochararray);
-        //constructs strings from the elements of the array//
-        string result = string.Join(",", tochararray);
-        Console.WriteLine($"the edited array into char value is as follows\n{result}");
+        // string value = "Won";
+        // char[] tochararray = value.ToCharArray();
+        // Array.Reverse(tochararray);
+        // //constructs strings from the elements of the array//
+        // string result = string.Join(",", tochararray);
+        // Console.WriteLine($"the edited array into char value is as follows\n{result}");
 
-        string[] index = result.Split(',');
-        foreach (string i in index)
+        // string[] index = result.Split(',');
+        // foreach (string i in index)
+        // {
+        //     Console.WriteLine(i);
+        // }
+        // Console.WriteLine("");
+        string word = "The quick brown fox jumps over the lazy dog";
+        string[] edited = word.Split(' ');
+
+        foreach (var i in edited)
         {
-            Console.WriteLine(i);
+            Array.Reverse(edited);
+
         }
-        Console.WriteLine("");
+        Console.WriteLine(edited);
+
+
     }
     //---------------------ARRAY METHODS-------------------//
     public static void Sortarrays()
