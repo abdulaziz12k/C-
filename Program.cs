@@ -44,27 +44,27 @@ public class Program
     //---------------------JOIN ARRAYS-------------------//
     public static void Joinarrays()
     {
-        // string value = "Won";
-        // char[] tochararray = value.ToCharArray();
-        // Array.Reverse(tochararray);
-        // //constructs strings from the elements of the array//
-        // string result = string.Join(",", tochararray);
-        // Console.WriteLine($"the edited array into char value is as follows\n{result}");
+        string value = "The quick brown fox jumps over the lazy dog";
+        char[] tochararray = value.ToCharArray();
+        Array.Reverse(tochararray);
+        //constructs strings from the elements of the array//
+        string result = string.Join(" ", tochararray);
+        Console.WriteLine($"the edited array into char value is as follows\n{result}");
 
         // string[] index = result.Split(',');
         // foreach (string i in index)
         // {
-        //     Console.WriteLine(i);
+        //     Console.Write(i);
         // }
         // Console.WriteLine("");
-        string word = "The quick brown fox jumps over the lazy dog";
-        string[] edited = word.Split(' ');
-        Array.Reverse(edited);
-        foreach (var i in edited)
-        {
+        // string word = "The quick brown fox jumps over the lazy dog";
+        // string[] edited = word.Split(' ');
+        // Array.Reverse(edited);
+        // foreach (var i in edited)
+        // {
 
-            Console.WriteLine(i);
-        }
+        //     Console.WriteLine(i);
+        // }
 
 
 
