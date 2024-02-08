@@ -59,13 +59,13 @@ public class Program
         // Console.WriteLine("");
         string word = "The quick brown fox jumps over the lazy dog";
         string[] edited = word.Split(' ');
-
+        Array.Reverse(edited);
         foreach (var i in edited)
         {
-            Array.Reverse(edited);
 
+            Console.WriteLine(i);
         }
-        Console.WriteLine(edited);
+
 
 
     }
