@@ -14,7 +14,7 @@ public class Program
         Joinarrays();
         // RollDice();
         // EvenOdd();
-        // Console.ReadLine();
+        Console.ReadLine();
     }
     public static void EvenOdd()
     {
