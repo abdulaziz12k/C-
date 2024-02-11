@@ -48,7 +48,8 @@ public class Program
         char[] tochararray = value.ToCharArray();
         Array.Reverse(tochararray);
         //constructs strings from the elements of the array//
-        string result = string.Join(" ", tochararray);
+        string result = string.Join("", tochararray);
+        Console.WriteLine($"the original array:\n{value}");
         Console.WriteLine($"the edited array into char value is as follows\n{result}");
 
         // string[] index = result.Split(',');
