@@ -236,7 +236,7 @@ public class Program
         int secondValue = 600;
         int largerValue = Math.Max(firstValue, secondValue);
 
-        Console.WriteLine($"The larger between {firstValue} and {secondValue} is: {largerValue}");
+        Console.WriteLine($"the larger between {firstValue} and {secondValue} is: {largerValue}");
         Console.WriteLine("");
     }
 
